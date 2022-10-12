@@ -1,0 +1,46 @@
+.container{
+    margin-top: 40px;
+    padding: 50px;
+    background-color:rgb(22, 130, 163);
+    border-radius: 10px;
+}
+.logo{
+    width: 80%;
+    height: 80%;
+}
+
+#UserEmailError , #userNameError{
+    display: none;
+    color: red;
+}
+#startChooseexam ,#technicalExam{
+    display: none;
+}
+#startChooseexam{
+    background-color:rgb(255, 253, 253);
+    padding: 10%;
+    height: 100%;
+    font: bold 20px arial;
+}
+.chooseStart{
+    margin-bottom: 80px;
+}
+#technicalExam{
+    font: bold 20px arial;
+    padding-top: 30px;
+}
+li{
+    list-style-type: none;
+}
+#EnglishRes,#TechExam{
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    padding-top: 40px;
+    font: bold 35px arial;
+    background-color:red
+}
+#FinalResult{
+    display: none;
+}

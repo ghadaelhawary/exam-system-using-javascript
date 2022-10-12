@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Online Exam</title>
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <div  class="container">
+            <!-- Welcome Page-->
+           <div class="jumbotron text-center" style="background-color: white;" id="startPage" >
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="UP/1.jpg" class="logo"alt="logo">
+                    </div>
+                    <div class="col-md-7 ">
+                        <i class="fa fa-graduation-cap fa-lg"></i>
+                        <p class="h3 mt-2"><i>Welcome to ITI Exam </i></p>
+                        <div class="input-group  col-md-8 offset-md-2 mt-5">
+                          <span class="input-group-prepend"><i class="input-group-text fa fa-user"></i></span>
+                          <input  id='userName' placeholder="User Name" class="form-control">
+                        </div>
+                        <span id="userNameError" >Please, Enter Your Name only letters!</span>
+                        <div class="input-group  col-md-8 offset-md-2 mt-3">
+                            <span class="input-group-prepend"><i class="input-group-text fa fa-envelope"></i></span>
+                            <input  id='UserEmail' placeholder="User Email" class="form-control">
+                        </div>
+                        <span id="UserEmailError">Please, Enter Your Mail ! </span>
+                        <div><button class="btn btn-dark mt-5" id="btnStart"><i>Start Exam</i></button></div>
+                    </div>
+                </div>
+           </div>
+           <!--End Welcome Page-->
+           <!--Start choose exam page-->
+           <div class="jumbotron text-center"  id='startChooseexam'>
+                <div class="row">
+                    <p  class="h2 col-md-12 text-center chooseStart"><i>Choose  what exam  you want to start with it ?</i> </p>
+                    <div class="col-md-6">
+                        <button class="btn bg-danger btn-lg text-white text-uppercase p-3 m-2" id="enExam"><b>English Exam</b></button>
+                    </div>
+                    <div class="col-md-6">
+                            <button class="btn  btn-warning btn-lg text-white text-uppercase p-3 m-2" id='techExam'><b>Technical Exam</b></button>
+                        </div>
+                </div>
+           </div>
+           <!--end choose exam page-->
+           <!--Start  exam-->
+           <div class="jumbotron text-center" style="background-color: white;" id="technicalExam" >
+                <div class="row text-left">
+                    <div class="col-md-6"><span id="minute"></span><spa>:</spa><span id="Second"></span></div>
+                    <div class="col-md-6" > <p id = 'UserNameForTest'></p></div>
+                    
+                    <div class="col-12 m-4">
+                        <p id="question"></p>
+                        <ol id='answers'></ol>
+                    </div>
+                    <div class="col-md-6">
+                            <button class="btn btn-warning m-2" id="prev">Previous</button>
+                            <button  class="btn btn-warning m-2" id = 'next'>Next</button>
+                    </div>
+                    <div class="col-md-6"> <button class="btn btn-info m-2" id="finish">Finish</button></div>
+
+                </div>
+           </div>
+           <!--End technical exam-->
+           <!--Start Final  Degree Page -->
+           <div class="jumbotron text-center" style="background-color: white;" id="FinalResult" >
+               <div class="row">
+                    <div class="col-md-12 mb-5"><p class="h1">Result Of Exam </p></div>
+                    <div class="col-md-6 text-center">
+                        <p class="h2 text-info"><i>Technical Exam Result </i></p>
+                        <div id="TechExam"></div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="h2 text-info"><i>English Exam Result</i></p>
+                        <div id='EnglishRes'></div>
+                    </div>
+                    <div class="col-md-12 mt-4"><p class="h3">Good Luck</p></div>
+               </div>
+           </div>
+           <!--End Final  Degree Page -->
+        </div>
+        <script src="js/JQuery-3.3.1.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
